@@ -1,0 +1,15 @@
+{
+    "private": true,
+    "workspaces": [
+        "portfolio-frontend"
+    ],
+    "scripts": {
+        "start": "concurrently -n FRONT \"yarn workspace portfolio-frontend start\"",
+        "test": "yarn workspace portfolio-frontend test"
+    },
+    "devDependencies": {
+        "component-crafter": "^2.0.17",
+        "concurrently": "^9.2.0",
+        "madge": "^8.0.0"
+    }
+}
