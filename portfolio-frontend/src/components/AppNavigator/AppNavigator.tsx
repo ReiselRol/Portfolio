@@ -1,6 +1,8 @@
 import { useAppNavigator } from '../../hooks/useAppNavigator/useAppNavigator';
 import { type FC, type ReactNode } from 'react';
 import './AppNavigator.css';
+import { TabGroup } from '../TabGroup/TabGroup';
+import { Tabs } from '../../constants/Tabs';
 
 /**
  * **PROPERTIES OF APP COMPONENT:**
@@ -36,7 +38,10 @@ export const AppNavigator: FC<AppNavigatorProps> = ({ children }) => {
 
   return (
     <div data-testid='AppNavigator-Component'>
-      {children}
+      <TabGroup Tabs={Tabs}/>
+      <div data-testid='AppNavigator-Children' className='AppNavigator-children-container'>
+        {children}
+      </div>
     </div>
   )
 }

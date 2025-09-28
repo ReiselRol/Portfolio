@@ -39,7 +39,7 @@ export const App: FC<AppProps> = ({ }) => {
   return (
     <Provider store={AppStore}>
       <BrowserRouter>
-        <div data-testid='App-Component'>
+        <div data-testid='App-Component' className='App-container'>
           <Routes>
             <Route path={AppRoutes.VideogamesPath} element={<VideogamesPage />} />
             <Route path={AppRoutes.WebDevelopmentPath} element={<WebProjectsPage />} />
