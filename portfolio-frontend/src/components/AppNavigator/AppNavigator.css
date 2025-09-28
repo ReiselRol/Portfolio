@@ -1,0 +1,7 @@
+.AppNavigator-children-container {
+    width: 100%;
+    height: calc(100vh - 200px);
+    top: 200px;
+    left: 0px;
+    position: fixed;
+}
